@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>YZABEL JOURNAL</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	</head>
+	<body class="load">
+		<div class="container">
+			<div class="content">
+				<button class="button button--trigger" onmouseover="demo.init()">ENTER</button>
+			</div>
+		</div>
+		<!-- /container -->
+		<script>
+		const SETTINGS = {
+			rebound: {
+				tension: 2,
+				friction: 7
+			},
+			spinner: {
+				id: 'spinner',
+				radius: 170,
+				sides: 3,
+				depth: 9,
+				colors: {
+					background: '#f0f0f0',
+					stroke: null,
+					base: '#222',
+					child: '#f0f0f0'
+				},
+				alwaysForward: true, // When false the spring will reverse normally.
+				restAt: null, // A number from 0.1 to 0.9 || null for full rotation
+				renderBase: true
+			}
+            
+		};
+            
+		</script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
