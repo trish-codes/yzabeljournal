@@ -1,0 +1,79 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	background: #f0f0f0;
+	color: #272633;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	outline: none;
+	color: #34343c;
+	text-decoration: none;
+}
+
+a:hover, 
+a:focus {
+	color: #4c4b67;
+}
+
+/* Content */
+.content {
+	position: relative;
+	min-height: 250px;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-align-content: center;
+	-ms-flex-line-pack: center;
+	align-content: center;
+}
+
+.button {
+	padding: 1.5em 3.5em;
+	border: 0;
+	margin: 0;
+	background: #272633;
+	color: #fff;
+	min-width: 8em;
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 1px;
+	font-size: .95em;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.button:hover {
+	background: #4c4b67;
+}
+
+.button:focus {
+	outline: none;
+}
+
+.grid {
+	position: relative;
+	width: 100vw;
+}
+
+.load { color: #272633; background: #f0f0f0; }
+.load a { color: #34343c; }
+.load a:hover, .load a:focus, .load .codrops-demos a.current-demo { color: #6a6a6a; }
+.load .button { background: #272633; }
+.load .button:hover { background: #6a6a6a; }
